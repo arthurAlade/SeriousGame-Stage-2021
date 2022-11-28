@@ -1,0 +1,28 @@
+version: '3'
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db-graphql
+      MYSQL_USER: db-user
+      MYSQL_PASSWORD: db-user
+    ports:
+      - 3306:3306
+    volumes:
+      - ./mysql:/var/lib/mysql
+    networks:
+      - network
+  adminer:
+    image: adminer:latest
+    restart: always
+    ports:
+      - 8080:8080
+    links:
+      - db
+    networks:
+      - network
+networks:
+  network:
+    driver: bridge

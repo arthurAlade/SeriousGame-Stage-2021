@@ -1,0 +1,198 @@
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #EEEEEE;
+}
+
+#root {
+  height: 100%;
+}
+
+.ApplicationContent {
+  height: 100%;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+.App-container{
+  display: flex;
+  width: calc(100vw - 25px);
+  margin-left: 35px;
+  height: 80%;
+}
+.App-informations{
+  display: flex;
+  width: 35%;
+  flex-direction: column;
+  background-color :#D6DBDD;
+  border-radius: 15px;
+  text-align : center;
+  margin-top: 2%;
+  margin-bottom: 3.5%;
+  height: 90%;
+}
+.App-content{
+  width: 70%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  overflow: scroll;
+}
+.globalInfoContent {
+  display: table;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+}
+.globalInfoText {
+  display: table-cell;
+  vertical-align: middle;
+}
+.globalInfoText h2{
+  font-size: 3vw;
+}
+.globalInfoText p{
+  font-size: 2vw;
+}
+.square{
+  display: inline-block;
+  border-radius: 15px;
+  margin: 0 2% 6.5% 2%;
+  background-color :#D6DBDD;
+  width: 29%;
+  height: 45%;
+  padding: 1px;
+  text-align : center;
+  font-size: 150%;
+}
+.square a {
+  text-decoration: none;
+  color: black;
+}
+
+/*
+  Seance display
+*/
+.squareHaut {
+  height: 35%;
+}
+.squareHaut p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.squareCentral {
+  height: 35%;
+  margin-top: 5%;
+  text-align: center;
+}
+.squareCentral-seance {
+  height: 17.5%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5px;
+  text-align: center;
+}
+.squareCentral-seance p {
+  margin: 0;
+  vertical-align: middle;
+}
+.squareCentral p {
+  width: 100%;
+  vertical-align: middle;
+}
+.squareBas {
+  height: 25%;
+  text-align: center;
+}
+.squareBas p {
+  vertical-align: middle;
+  margin: 0;
+}
+/**
+  Color seance etat
+*/
+.orangeState {
+  color: #F0B27A;
+}
+.greenState {
+  color: #27AE60;
+}
+.blueState {
+  color: #63B7E1;
+}
+.redState {
+  color: #A61E1E;
+}
+.HeaderListe{
+  list-style-type : none;
+  display: flex;
+  justify-content : center;
+  height: 15%;
+}
+.HeaderListe.Li{
+  margin:1%;
+  background-color:#D6DBDD;
+  border-radius: 15px;
+  width: 15%;
+  height: 60%;
+  display: table;
+  text-align: center;
+  box-shadow: 10px 5px 15px grey;
+}
+.HeaderListe.Li a {
+  font-size: 1.5vw;
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.HeaderListe.Li.NewSeance{
+  background-color: #EDBB99;
+}
+.equipe h1{
+ font-size: 225%;
+  margin: 2%;
+}
+.equipe p {
+  margin: 0;
+  font-size: 115%;
+}
+.equipe h2{
+  margin: 1.5%;
+  font-size: 150%;
+}
+
+.App-content-equipe{
+  width: 70%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 2%;
+  overflow: scroll;
+}
+.table-log{
+
+}
+
+.table-log-thead th{
+  border-bottom: solid;
+}
+.table-log-content{
+
+  text-align: left;
+}
+.log-table-component {
+  display: flex;
+  flex-direction: column;
+}

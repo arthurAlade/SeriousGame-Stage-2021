@@ -1,0 +1,8 @@
+# Partie API
+/API/yarn-error.log
+/API/node_modules/
+/API/mysql/
+/API/yarn.lock
+# Partie APP
+/APP/supervision/node_modules/
+/APP/supervision/yarn.lock
